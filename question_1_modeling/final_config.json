@@ -1,0 +1,79 @@
+{
+  "challenge": {
+    "features": [
+      "balls",
+      "strikes",
+      "challenger_score_diff",
+      "batter_hand",
+      "inning",
+      "plate_x",
+      "plate_z",
+      "pitch_result",
+      "break_x",
+      "pitcher_hand",
+      "sz_top",
+      "sz_bot",
+      "release_x",
+      "release_angle_x"
+    ],
+    "fixed_parameters": {
+      "objective": "binary:logistic",
+      "eval_metric": "logloss",
+      "random_state": 42,
+      "n_jobs": 4,
+      "tree_method": "hist",
+      "enable_categorical": true
+    },
+    "best_parameters": {
+      "n_estimators": 550,
+      "max_depth": 7,
+      "learning_rate": 0.033260275508020916,
+      "min_child_weight": 1.6432444224940226,
+      "subsample": 0.8993219533353726,
+      "colsample_bytree": 0.9267323154259232,
+      "reg_alpha": 2.350156348288498,
+      "reg_lambda": 6.649703173939146,
+      "gamma": 0.7998254435304435
+    }
+  },
+  "success": {
+    "features": [
+      "plate_x",
+      "plate_z",
+      "sz_bot",
+      "sz_top",
+      "pitch_result",
+      "batter_hand",
+      "pitcher_hand"
+    ],
+    "fixed_parameters": {
+      "objective": "binary:logistic",
+      "eval_metric": "logloss",
+      "random_state": 42,
+      "n_jobs": 4,
+      "tree_method": "hist",
+      "enable_categorical": true
+    },
+    "best_parameters": {
+      "n_estimators": 600,
+      "max_depth": 6,
+      "learning_rate": 0.043291633554652126,
+      "min_child_weight": 2.0672459143899458,
+      "subsample": 0.7045696404929402,
+      "colsample_bytree": 0.9785919036391848,
+      "reg_alpha": 1.1393500636686358,
+      "reg_lambda": 1.400636728587256,
+      "gamma": 0.8172234387136021
+    }
+  },
+  "validation": {
+    "challenge_seed": 42,
+    "success_seeds": [
+      42,
+      123,
+      2026
+    ],
+    "success_holdout_seed": 8675309,
+    "holdout_fraction": 0.2
+  }
+}
